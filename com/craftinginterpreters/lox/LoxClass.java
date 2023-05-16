@@ -10,6 +10,7 @@ class LoxClass implements LoxCallable {
   
   LoxClass(String name, LoxClass superclass, Map<String, LoxFunction> methods) {
     this.name = name;
+    this.superclass = superclass;
     this.methods = methods;
   }
 
